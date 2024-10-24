@@ -27,9 +27,9 @@ infrastructure:
         - URL
         - Password
       parameters:
-      HomeFolder:
+      HomeFolder
         - templateParameter: HomeFolder
-          defaultValue: workshop
+          defaultValue: /Workshop
         - templateParameter: AssetZipS3Path
           defaultValue: '{{.AssetsBucketName}}/{{.AssetsBucketPrefix}}workshop.zip'
 
