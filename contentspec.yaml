@@ -29,7 +29,7 @@ infrastructure:
       parameters:
       HomeFolder:
         - templateParameter: HomeFolder
-          defaultValue: project
+          defaultValue: workshop
         - templateParameter: AssetZipS3Path
           defaultValue: '{{.AssetsBucketName}}/{{.AssetsBucketPrefix}}workshop.zip'
 
