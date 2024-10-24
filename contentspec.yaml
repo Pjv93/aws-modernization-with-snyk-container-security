@@ -27,7 +27,7 @@ infrastructure:
         - URL
         - Password
       parameters:
-      HomeFolder
+      HomeFolder:
         - templateParameter: HomeFolder
           defaultValue: project
         - templateParameter: AssetZipS3Path
