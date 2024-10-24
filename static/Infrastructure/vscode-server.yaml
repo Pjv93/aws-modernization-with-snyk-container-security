@@ -957,7 +957,7 @@ Resources:
                     sudo -u ${VSCodeUser} git -C ${HomeFolder} branch
                   fi
           - action: aws:runShellScript
-            name: Install Snyk, Terraform, Kubectl
+            name: InstallSnykTerraformKubectl
             inputs:
               runCommand:
                 - '#!/bin/bash'
