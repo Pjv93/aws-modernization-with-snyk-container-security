@@ -63,7 +63,7 @@ Parameters:
   HomeFolder:
     Type: String
     Description: Folder to open in VS Code server
-    Default: /Workshop
+    Default: /workshop
   DevServerBasePath:
     Type: String
     Description: Base path for the application to be added to Nginx sites-available list
@@ -84,12 +84,10 @@ Parameters:
     Description: Kubernetes version
     Type: String
     Default: "1.30"
-
   EKSClusterName:
     Description: Name of EKS Cluster
     Type: String
     Default: snyk-eks
-
   WorkerNodeInstanceType:
     Description: Worker Node cluster instances
     Type: String
