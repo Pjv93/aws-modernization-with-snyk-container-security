@@ -27,7 +27,6 @@ infrastructure:
         - URL
         - Password
       parameters:
-      HomeFolder:
         - templateParameter: HomeFolder
           defaultValue: /Workshop
         - templateParameter: AssetZipS3Path
