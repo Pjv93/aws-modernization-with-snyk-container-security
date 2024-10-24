@@ -21,16 +21,17 @@ additionalLinks:
 # START Infrastructure
 infrastructure:
   cloudformationTemplates:
-    - templateLocation: static/Infrastructure/lab-setup.yaml
-      label: EKS Workshop Environment
-
+    - templateLocation: static/cfn/vscode-server.yaml
+      label: VSCode
+      participantVisibleStackOutputs:
+        - URL
+        - Password
       parameters:
-
-          # The parameter name present in the corresponding CloudFormation template
-        - templateParameter: WorkshopStudioRun
-          defaultValue: "true"
-        - templateParameter: C9InstanceVolumeSize
-          defaultValue: 50
+      HomeFolder
+        - templateParameter: HomeFolder
+          defaultValue: project
+        - templateParameter: AssetZipS3Path
+          defaultValue: '{{.AssetsBucketName}}/{{.AssetsBucketPrefix}}workshop.zip'
 
 # END Infrastructure
 
