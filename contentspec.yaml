@@ -21,7 +21,7 @@ additionalLinks:
 # START Infrastructure
 infrastructure:
   cloudformationTemplates:
-    - templateLocation: static/cfn/vscode-server.yaml
+    - templateLocation: static/Infrastructure/vscode-server.yaml
       label: VSCode
       participantVisibleStackOutputs:
         - URL
